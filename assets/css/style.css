@@ -136,11 +136,55 @@ body {
   color: var(--muted);
 }
 
+.home-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+  align-items: start;
+}
+
+.home-photo-wrap {
+  margin: 0;
+  justify-self: center;
+}
+
+.home-photo {
+  display: block;
+  width: 100%;
+  max-width: 11rem;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.home-intro-text .lead {
+  margin-top: 0;
+}
+
+.home-intro-text .profile-links {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+@media (min-width: 34rem) {
+  .home-intro {
+    grid-template-columns: 9.75rem minmax(0, 1fr);
+  }
+
+  .home-photo-wrap {
+    justify-self: start;
+  }
+}
+
 .profile-links {
   display: flex;
   flex-wrap: wrap;
   gap: 0.65rem;
-  margin: 1rem 0 1.5rem;
+  margin: 1rem 0 0;
 }
 
 .profile-link {
