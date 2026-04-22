@@ -136,6 +136,48 @@ body {
   color: var(--muted);
 }
 
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.profile-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.92rem;
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+}
+
+.profile-link .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.35rem;
+  height: 1.35rem;
+  border-radius: 50%;
+  background: var(--tab-active-bg);
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.profile-link:hover,
+.profile-link:focus-visible {
+  border-color: #c4d7fb;
+  background: #f8fbff;
+  color: var(--accent);
+}
+
 .panel[hidden] {
   display: none !important;
 }
