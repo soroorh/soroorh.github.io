@@ -146,19 +146,25 @@ body {
 
 .home-photo-wrap {
   margin: 0;
+  align-self: start;
   justify-self: center;
+  display: block;
+  width: min(11rem, 100%);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  box-sizing: border-box;
+  line-height: 0;
 }
 
 .home-photo {
   display: block;
   width: 100%;
-  max-width: 11rem;
   height: auto;
   aspect-ratio: 1;
   object-fit: cover;
-  border-radius: 50%;
-  border: 1px solid var(--border);
-  background: var(--surface);
+  object-position: center;
 }
 
 .home-intro-text .lead {
